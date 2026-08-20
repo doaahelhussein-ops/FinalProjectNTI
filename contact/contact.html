@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="page1">
+        <div class="nav">
+            <img src="assets/img/logo-transparent-01.png" alt="ITAgency">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../About/about.html" class="nav-link">About Us</a></li>
+                    <li><a href="../services/servers.html" class="nav-link">Services</a></li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="blog-toggle">
+                        <label for="blog-toggle">
+                           <a href="../Blog/Blog Column 1/BlogColumn1.html">Blog</a> <i class="fa fa-angle-down"></i>
+                        </label>
+                        <ul>
+                            <li><a href="../Blog/Blog Column 1/BlogColumn1.html" class="dropdown-item">Blog column 1</a></li>
+                            <li><a href="../Blog/Blog Column 2/BlogColumn2.html" class="dropdown-item">Blog column 2</a>
+                            </li>
+                            <li><a href="../Blog/Blog Column 3/BlogColumn3.html" class="dropdown-item">Blog column 3</a>
+                            </li>
+                            <li><a href="../Blog/Blog Detail Page/BlogDetilPage.html" class="dropdown-item">Blog detail page</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="pages-toggle">
+                        <label for="pages-toggle">
+                           <a href="../Pages/padge.html">Pages</a> <i class="fa fa-angle-down"></i>
+                        </label>
+                        <ul>
+                            <li><a href="../Pages/padge.html" class="dropdown-item">Terms & conditions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../contact/contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="quote-btn">Get Quotes</button>
+            <button class="theme-btn" id="themebtn">
+                <i class="fa-regular fa-sun"></i>
+
+            </button>
+        </div>
+        <div class="header">
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="hand">
+                <img src="assets/img/hand-ia-bgremove.png" alt="hand">
+            </div>
+            <div class="content">
+                <div class="breadcrumb">
+                    <span class="h">Home</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Contact Us</span>
+                </div>
+                <h1>Contact Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rem similique doloremque molestiae quae.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info">
+
+                    <div class="contact-circle"></div>
+
+                    <h3>Let's Start a Conversation</h3>
+
+                    <p class="contact-intro">
+                        Let's build the future of your business together.
+                        Contact our experts and start your digital journey today.
+                    </p>
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+
+                        <div>
+                            <span>PHONE</span>
+                            <p>+1 (800) 987-6543</p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <div>
+                            <span>EMAIL</span>
+                            <p>hello@itagency.com</p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <i class="fa-regular fa-map"></i>
+
+                        <div>
+                            <span>ADDRESS</span>
+                            <p>789 Innovation Avenue, Future Town, FT 67890</p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <div>
+                            <span>BUSINESS HOURS</span>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+
+                    </div>
+
+                    <div class="follow-us">
+
+                        <span>FOLLOW US</span>
+
+                        <div class="social-icons">
+
+                            <a href="#" aria-label="X">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+
+                            <a href="#" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a href="#" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+
+                            <a href="#" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-form-box">
+
+                    <form id="contactForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="fullName">
+                                    Full Name *
+                                </label>
+
+                                <input type="text" id="fullName" name="fullName" required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address *
+                                </label>
+
+                                <input type="email" id="email" name="email" required>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input type="tel" id="phone" name="phone">
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="company">
+                                    Company
+                                </label>
+
+                                <input type="text" id="company" name="company">
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="service">
+                                    Service Interested In
+                                </label>
+
+                                <select id="service" name="service">
+
+                                    <option value="">
+                                        Select a service
+                                    </option>
+
+                                    <option value="web-development">
+                                        Web Development
+                                    </option>
+
+                                    <option value="mobile-development">
+                                        Mobile Development
+                                    </option>
+
+                                    <option value="ui-ux">
+                                        UI / UX Design
+                                    </option>
+
+                                    <option value="cloud">
+                                        Cloud Solutions
+                                    </option>
+
+                                    <option value="cyber-security">
+                                        Cyber Security
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="budget">
+                                    Project Budget
+                                </label>
+
+                                <select id="budget" name="budget">
+
+                                    <option value="">
+                                        Select budget range
+                                    </option>
+
+                                    <option value="1k-5k">
+                                        $1,000 - $5,000
+                                    </option>
+
+                                    <option value="5k-10k">
+                                        $5,000 - $10,000
+                                    </option>
+
+                                    <option value="10k-25k">
+                                        $10,000 - $25,000
+                                    </option>
+
+                                    <option value="25k-plus">
+                                        $25,000+
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group textarea-group">
+
+                            <label for="projectDetails">
+                                Project Details *
+                            </label>
+
+                            <textarea id="projectDetails" name="projectDetails" maxlength="2000" required
+                                placeholder="Tell us about your project requirements, goals, and any specific features you need..."></textarea>
+
+                            <div class="character-count">
+                                <span id="charCount">0</span>/2000 characters
+                            </div>
+
+                        </div>
+
+                        <label class="checkbox-label">
+
+                            <input type="checkbox" id="newsletter" name="newsletter">
+
+                            <span>
+                                Subscribe to our newsletter for updates and tech insights
+                            </span>
+
+                        </label>
+
+                        <label class="checkbox-label">
+
+                            <input type="checkbox" id="privacy" name="privacy" required>
+
+                            <span>
+                                I agree to the
+                                <a href="#">Privacy Policy</a>
+                                and
+                                <a href="#">Terms of Service</a> *
+                            </span>
+
+                        </label>
+
+                        <button type="submit" class="send-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="location-section">
+        <h2>Our Location</h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.332179421564!2d-122.00639707567122!3d37.33464377209963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1sar!2seg!4v1787100580388!5m2!1sar!2seg"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </div>
+
+    <div class="page5">
+
+        <img src="assets/img/hand-ia-bgremove.png" alt="hand" class="hand-img2">
+
+        <div class="member">
+            <div class="footer-logo">
+                <img src="assets/img/logo-transparent-01.png" alt="ITAgency Logo">
+            </div>
+            <p class="description">
+                Empowering businesses with smart, innovative tech solutions. We craft high-impact web development,
+                mobile apps, and digital services that fuel your growth and success.
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="member reverse">
+            <h3>Navigation</h3>
+             <ul>
+
+                    <li>
+                        <a href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../About/about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../services/servers.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Blog/Blog Column 1/BlogColumn1.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../contact/contact.html">
+                            ContactUs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../Blog/Blog Detail Page/BlogDetilPage.html">
+                            Blog Detail Page
+                        </a>
+                    </li>
+
+
+                     <li>
+                        <a href="../Blog/Blog Column 1/BlogColumn1.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+        </div>
+        <div class="member">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Mobile App Development</a></li>
+                <li><a href="#">Cloud Solutions</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Data Analytics</a></li>
+                <li><a href="#">Cybersecurity</a></li>
+                <li><a href="#">IT Consulting</a></li>
+
+            </ul>
+        </div>
+        <div class="member reverse">
+            <h3>Contact Info</h3>
+            <div class="contact-info2">
+                <div class="info-item2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>ADDRESS</strong>
+                        <p>789 Innovation Avenue, Future Town, FT 67890</p>
+                    </div>
+                </div>
+                <div class="info-item2">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <strong>PHONE</strong>
+                        <p>+1 (800) 987-6543</p>
+                    </div>
+                </div>
+                <div class="info-item2">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>EMAIL</strong>
+                        <p>hello@itagency.com</p>
+                    </div>
+                </div>
+                <div class="info-item2">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>BUSINESS HOURS</strong>
+                        <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p class="description">Subscribe to our newsletter for the latest tech insights and updates.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <label class="checkbox-label">
+                <input type="checkbox"> I agree to the <a href="#">Privacy Policy</a>
+            </label>
+            <div class="copyright">
+                ITAgency © 2025
+            </div>
+        </div>
+
+    </div>
+
+
+    <button id="upBtn" class="hide">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
