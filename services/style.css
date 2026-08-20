@@ -89,7 +89,7 @@ input {
 
     align-items: center;
 
-    gap: 38px;
+    gap: 21px;
 
     list-style: none;
 }
@@ -101,8 +101,8 @@ input {
 
     white-space: nowrap;
 
-    font-size: 21px;
-    font-weight: 800;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .nav nav ul li>a {
