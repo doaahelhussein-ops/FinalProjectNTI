@@ -9,170 +9,156 @@
 
     <title>Terms & Conditions - ITAgency</title>
 
-    <link rel="stylesheet" href="term.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <link rel="stylesheet" href="term.css">
+     
 </head>
+
 
 <body>
 
 
-    <!-- =========================
+    <!-- =========================================================
          NAVBAR
-    ========================= -->
+    ========================================================= -->
 
-    <header class="nav">
+     <header class="nav" id="header">
 
-        <!-- LOGO -->
-        <a href="page.html" class="nav-logo">
+        <div class="container">
 
-            <img src="photos/img2.png" alt="ITAgency">
+            <a href="../index.html" class="logo">
+                <img src="../services/photos/img2.png" alt="ITAgency">
+            </a>
 
-        </a>
+            <nav class="navbar">
+                <ul class="nav-menu">
 
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
 
-        <!-- NAVIGATION -->
-        <nav>
+                    <li>
+                        <a href="../About/about.html">About Us</a>
+                    </li>
 
-            <ul>
+                    <li>
+                        <a href="../services/servers.html">Services</a>
+                    </li>
 
-                <!-- HOME -->
-                <li>
-                    <a href="../index.html">
-                        Home
-                    </a>
-                </li>
+                    <li class="dropdown">
+                        <a href="../Blog/Blog Column 1/BlogColumn1.html">
+                            Blog
+                            <i class="fa fa-angle-down"></i>
+                        </a>
 
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Blog/Blog Column 1/BlogColumn1.html">
+                                    Blog column 1
+                                </a>
+                            </li>
 
-                <!-- ABOUT -->
-                <li>
-                    <a href="../About/about.html">
-                        About Us
-                    </a>
-                </li>
+                            <li>
+                                <a href="../Blog/Blog Column 2/BlogColumn2.html">
+                                    Blog column 2
+                                </a>
+                            </li>
 
+                            <li>
+                                <a href="../Blog/Blog Column 3/BlogColumn3.html">
+                                    Blog column 3
+                                </a>
+                            </li>
 
-                <!-- SERVICES -->
-                <li>
-                    <a href="../services/servers.html">
-                        Services
-                    </a>
-                </li>
+                            <li>
+                                <a href="#">
+                                    Blog detail page
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
+                    <li class="dropdown">
+                        <a href="../Pages/padge.html">
+                            Pages
+                            <i class="fa fa-angle-down"></i>
+                        </a>
 
-                <!-- BLOG -->
-                <li class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Pages/padge.html">
+                                    Terms & conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
 
-                    <a href="../Blog/Blog Column 1/BlogColumn1.html">
-                        Blog
-                        <span class="arrow">⌄</span>
-                    </a>
+                    <li>
+                        <a href="../contact/contact.html">
+                            Contact Us
+                        </a>
+                    </li>
 
-                    <ul class="dropdown-menu">
+                </ul>
+            </nav>
 
-                        <li>
-                            <a href="../Blog/Blog Column 1/BlogColumn1.html">
-                                Blog Column 1
-                            </a>
-                        </li>
+            <div class="actions">
 
-                        <li>
-                            <a href="../Blog/Blog Column 2/BlogColumn2.html">
-                                Blog Column 2
-                            </a>
-                        </li>
+                <button class="quote-btn">
+                    Get Quotes
+                </button>
 
-                        <li>
-                            <a href="../Blog/Blog Column 3/BlogColumn3.html">
-                                Blog Column 3
-                            </a>
-                        </li>
+                <button class="theme-btn" id="theme-toggle">
+                    <i class="fa-regular fa-sun"></i>
+                </button>
 
-                        <li>
-                            <a href="../Blog/Blog Detail Page/BlogDetilPage.html">
-                                Blog Detail Page
-                            </a>
-                        </li>
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
-                    </ul>
-
-                </li>
-
-
-                <!-- PAGE -->
-                <li class="dropdown">
-
-                    <a href="../Pages/padge.html">
-                        Page
-                        <span class="arrow">⌄</span>
-                    </a>
-
-                    <ul class="dropdown-menu">
-
-                        <li>
-                            <a href="../Pages/padge.html">
-                                Terms & Conditions
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </li>
-
-
-                <!-- CONTACT -->
-                <li>
-                    <a href="../contact/contact.html">
-                        Contact Us
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-
-        <!-- NAV ACTIONS -->
-        <div class="nav-actions">
-
-            <button class="quote-btn" type="button">
-
-                Get Quotes
-
-            </button>
-
-
-            <button class="theme-btn" id="themeToggle" type="button">
-
-                ☾
-
-            </button>
+            </div>
 
         </div>
 
     </header>
 
 
-
-    <!-- =========================
+    <!-- =========================================================
          HERO
-    ========================= -->
+    ========================================================= -->
 
-    <section class="terms-hero">
+    <section class="header">
 
-        <div class="hero-content">
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-            <h1>
-                Terms & Conditions
-            </h1>
+        <div class="hand">
+            <img src="../Pages/photos/img1.png" alt="hand">
+        </div>
+
+        <div class="content">
+
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <i class="fa-solid fa-angle-right"></i>
+                <span>Pages</span>
+            </div>
+
+            <h1>Terms & Conditions</h1>
 
             <p>
-                Please read these terms and conditions carefully
-                before using our service.
-            </p>
+                Please read these terms and conditions carefully before using our service.
 
-            <span class="updated-date">
                 Last updated: January 15, 2025
-            </span>
+            </p>
 
         </div>
 
@@ -180,9 +166,9 @@
 
 
 
-    <!-- =========================
+    <!-- =========================================================
          TERMS CONTENT
-    ========================= -->
+    ========================================================= -->
 
     <main class="terms-container">
 
@@ -195,17 +181,20 @@
                 1. Acceptance of Terms
             </h2>
 
+
             <p>
                 Welcome to ITAgency. These Terms and Conditions
                 govern your access to and use of our website,
                 services, and related digital products.
             </p>
 
+
             <p>
                 By accessing or using our website, you acknowledge
                 that you have read, understood, and agree to be
                 bound by these Terms and Conditions.
             </p>
+
 
             <div class="notice-box">
 
@@ -233,6 +222,7 @@
                 2. Use of Services
             </h2>
 
+
             <p>
                 ITAgency provides technology and digital services
                 including web development, mobile application
@@ -245,6 +235,7 @@
             <h3>
                 2.1 Permitted Uses
             </h3>
+
 
             <ul>
 
@@ -269,9 +260,11 @@
             </ul>
 
 
+
             <h3>
                 2.2 Prohibited Uses
             </h3>
+
 
             <ul>
 
@@ -306,17 +299,20 @@
                 3. User Accounts
             </h2>
 
+
             <p>
                 Some services may require you to create an account.
                 You agree to provide accurate information and keep
                 your account details up to date.
             </p>
 
+
             <p>
                 You are responsible for maintaining the confidentiality
                 of your account credentials and for all activities
                 performed through your account.
             </p>
+
 
             <div class="notice-box security">
 
@@ -343,6 +339,7 @@
                 4. Content
             </h2>
 
+
             <p>
                 Content available through our website may include text,
                 graphics, images, software, designs, documents, and
@@ -354,11 +351,13 @@
                 4.1 User-Generated Content
             </h3>
 
+
             <p>
                 If you submit content through our services, you are
                 responsible for ensuring that you have the necessary
                 rights to share that content.
             </p>
+
 
             <p>
                 You must not submit content that is unlawful, misleading,
@@ -370,12 +369,14 @@
                 4.2 Intellectual Property
             </h3>
 
+
             <p>
                 Unless otherwise stated, all website designs, logos,
                 graphics, text, software, and other materials provided
                 by ITAgency are protected by applicable intellectual
                 property laws.
             </p>
+
 
             <p>
                 You may not reproduce, modify, distribute, or commercially
@@ -394,16 +395,19 @@
                 5. Privacy Policy
             </h2>
 
+
             <p>
                 We respect your privacy and are committed to protecting
                 the information you provide while using our website
                 and services.
             </p>
 
+
             <p>
                 Information collected through our services may be used
                 to provide, maintain, improve, and secure our services.
             </p>
+
 
             <div class="notice-box">
 
@@ -430,12 +434,14 @@
                 6. Limitation of Liability
             </h2>
 
+
             <p>
                 ITAgency makes reasonable efforts to provide reliable
                 and accurate services. However, we do not guarantee
                 that the website or services will always be available,
                 uninterrupted, or completely error-free.
             </p>
+
 
             <p>
                 To the extent permitted by applicable law, ITAgency
@@ -456,6 +462,7 @@
                 7. Termination
             </h2>
 
+
             <p>
                 We reserve the right to suspend or terminate access
                 to our services when necessary, including when these
@@ -467,6 +474,7 @@
                 7.1 Termination by User
             </h3>
 
+
             <p>
                 You may stop using our services at any time. If you
                 have an active service agreement, termination may also
@@ -477,6 +485,7 @@
             <h3>
                 7.2 Termination by Company
             </h3>
+
 
             <p>
                 ITAgency may suspend or terminate access when a user
@@ -496,6 +505,7 @@
                 8. Contact Us
             </h2>
 
+
             <p>
                 If you have any questions, concerns, or requests
                 regarding these Terms and Conditions, please contact us.
@@ -503,6 +513,7 @@
 
 
             <div class="contact-card">
+
 
                 <div class="contact-row">
 
@@ -543,22 +554,22 @@
 
                 </div>
 
+
             </div>
 
         </section>
+
 
     </main>
 
 
 
-    <!-- =========================
+    <!-- =========================================================
          FOOTER
-    ========================= -->
+    ========================================================= -->
 
     <footer class="footer">
 
-
-        <!-- HAND IMAGE -->
 
         <img src="photos/img1.png" alt="" class="footer-hand">
 
@@ -566,9 +577,7 @@
         <div class="footer-container">
 
 
-            <!-- =========================
-                 COMPANY
-            ========================= -->
+            <!-- COMPANY -->
 
             <div class="footer-column company">
 
@@ -602,9 +611,7 @@
 
 
 
-            <!-- =========================
-                 NAVIGATION
-            ========================= -->
+            <!-- NAVIGATION -->
 
             <div class="footer-column">
 
@@ -643,7 +650,7 @@
 
                     <li>
                         <a href="../contact/contact.html">
-                            ContactUs
+                            Contact Us
                         </a>
                     </li>
 
@@ -653,24 +660,13 @@
                         </a>
                     </li>
 
-
-                     <li>
-                        <a href="../Blog/Blog Column 1/BlogColumn1.html">
-                            Blog
-                        </a>
-                    </li>
-
-                    
-
                 </ul>
 
             </div>
 
 
 
-            <!-- =========================
-                 SERVICES
-            ========================= -->
+            <!-- SERVICES -->
 
             <div class="footer-column">
 
@@ -731,9 +727,7 @@
 
 
 
-            <!-- =========================
-                 CONTACT
-            ========================= -->
+            <!-- CONTACT -->
 
             <div class="footer-column">
 
@@ -805,9 +799,7 @@
 
 
 
-            <!-- =========================
-                 NEWSLETTER
-            ========================= -->
+            <!-- NEWSLETTER -->
 
             <div class="footer-column newsletter">
 
@@ -852,6 +844,7 @@
                 </p>
 
             </div>
+
 
         </div>
 

@@ -1,6 +1,4 @@
-/*
-   RESET
- */
+
 
 * {
     margin: 0;
@@ -8,7 +6,7 @@
     box-sizing: border-box;
 }
 
-
+  
 body {
 
     font-family: Arial, sans-serif;
@@ -353,9 +351,9 @@ body.dark .dropdown-menu li a:hover {
 
 #theme-toggle:hover {
 
-    /* background-color: #0785f2; */
+    background-color: #0785f2; 
 
-    /* color: white; */
+       color: white;
     border: 1px solid #0785f2 ;
      transition: 0.3s;
 
@@ -6978,6 +6976,44 @@ body.dark .contact-info {
         right: 20px;
         bottom: 25px;
 
+    }
+
+}
+
+
+/* =========================================================
+   PREVENT HORIZONTAL SCROLL ON MOBILE
+========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width: 1100px) {
+
+    .header {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .header .container {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .actions {
+        width: auto;
+        max-width: 100%;
+        flex-shrink: 0;
+    }
+
+    .menu-toggle {
+        display: flex !important;
+        flex-shrink: 0;
     }
 
 }

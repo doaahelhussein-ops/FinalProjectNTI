@@ -1,130 +1,266 @@
-//سكرول الناف بار
+/* =========================================================
+   NAVBAR SCROLL
+========================================================= */
+
+const nav = document.querySelector(".nav");
+
 window.addEventListener("scroll", function () {
-    let nav = document.querySelector(".nav");
+
     if (window.scrollY > 50) {
         nav.classList.add("scrolled");
     } else {
         nav.classList.remove("scrolled");
     }
-});
-
-// Dark & Light Mode
-let themeBtn = document.getElementById("themebtn");
-if (themeBtn) {
-    themeBtn.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
-        let icon = themeBtn.querySelector("i");
-        if (icon) {
-            if (document.body.classList.contains("dark-mode")) {
-                icon.className = "fa-regular fa-moon";
-            } else {
-                icon.className = "fa-regular fa-sun";
-            }
-        }
-    });
-}
-
-//header
-function addExtraShapes() {
-    const container = document.querySelector('.dots');
-
-    if (!container) return;
-    const layout = [
-        { zone: 'right', type: 'circle-filled', minLeft: 65, maxLeft: 73, top: 15 },
-        { zone: 'right', type: 'circle-filled', minLeft: 78, maxLeft: 88, top: 25 },
-        { zone: 'right', type: 'circle-filled', minLeft: 68, maxLeft: 76, top: 70 },
-        { zone: 'right', type: 'circle-outlined', minLeft: 82, maxLeft: 90, top: 75 },
-        { zone: 'right', type: 'circle-outlined', minLeft: 72, maxLeft: 80, top: 35 },
-
-        { zone: 'center', type: 'circle-filled', minLeft: 40, maxLeft: 48, top: 20 },
-        { zone: 'center', type: 'circle-outlined', minLeft: 50, maxLeft: 58, top: 72 },
-
-        { zone: 'left', type: 'circle-filled', minLeft: 6, maxLeft: 14, top: 20 },
-        { zone: 'left', type: 'circle-filled', minLeft: 20, maxLeft: 28, top: 75 },
-        { zone: 'left', type: 'circle-outlined', minLeft: 10, maxLeft: 18, top: 55 }
-    ];
-
-    layout.forEach((item) => {
-        const shape = document.createElement('span');
-        shape.classList.add('shape-extra', item.type);
-
-        const size = Math.floor(Math.random() * 80) + 45;
-        const left = (Math.random() * (item.maxLeft - item.minLeft) + item.minLeft).toFixed(2);
-        const top = (item.top + (Math.random() * 8 - 4)).toFixed(2);
-
-        const duration = (Math.random() * 5 + 5).toFixed(1);
-        const delay = (Math.random() * 4).toFixed(1);
-        const opacity = (Math.random() * 0.3 + 0.15).toFixed(2);
-
-        shape.style.width = size + 'px';
-        shape.style.height = size + 'px';
-        shape.style.top = top + '%';
-        shape.style.left = left + '%';
-        shape.style.animationDuration = duration + 's';
-        shape.style.animationDelay = delay + 's';
-        shape.style.opacity = opacity;
-
-        container.appendChild(shape);
-    });
-}
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', addExtraShapes);
-} else {
-    addExtraShapes();
-}
-//menu
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menuToggle');
-    const nav = document.querySelector('.nav');
-
-    if (menuToggle && nav) {
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('mobile-open');
-
-            const icon = menuToggle.querySelector('i');
-            if (icon) {
-                if (nav.classList.contains('mobile-open')) {
-                    icon.classList.remove('fa-bars');
-                    icon.classList.add('fa-xmark');
-                } else {
-                    icon.classList.remove('fa-xmark');
-                    icon.classList.add('fa-bars');
-                }
-            }
-        });
-    }
-});
-
-const projectDetails =
-    document.getElementById("projectDetails");
-
-const charCount =
-    document.getElementById("charCount");
-
-projectDetails.addEventListener("input", function () {
-
-    charCount.textContent = projectDetails.value.length;
 
 });
 
-//btn
-const upBtn = document.getElementById("upBtn");
-const page2 = document.querySelector(".page1");
 
-window.addEventListener("scroll", function () {
+/* =========================================================
+   DARK MODE
+========================================================= */
 
-    if (window.scrollY >= page2.offsetTop) {
-        upBtn.classList.replace("hide", "show");
+const themeToggle = document.getElementById("theme-toggle");
+
+function updateThemeIcon() {
+
+    if (!themeToggle) return;
+
+    const icon = themeToggle.querySelector("i");
+
+    if (!icon) return;
+
+    if (document.body.classList.contains("dark-mode")) {
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+
     } else {
-        upBtn.classList.replace("show", "hide");
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
     }
+
+}
+
+
+themeToggle.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark-mode");
+
+    updateThemeIcon();
+
 });
 
-upBtn.addEventListener("click", function () {
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+if (menuToggle && navbar) {
+
+    menuToggle.addEventListener("click", function () {
+
+        navbar.classList.toggle("mobile-open");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (navbar.classList.contains("mobile-open")) {
+
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+
+        } else {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
+
+    });
+
+}
+
+
+/* =========================================================
+   MOBILE DROPDOWN
+========================================================= */
+
+const dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach(function (dropdown) {
+
+    const link = dropdown.querySelector(":scope > a");
+
+    link.addEventListener("click", function (e) {
+
+        if (window.innerWidth <= 850) {
+
+            e.preventDefault();
+
+            dropdowns.forEach(function (item) {
+
+                if (item !== dropdown) {
+                    item.classList.remove("open");
+                }
+
+            });
+
+            dropdown.classList.toggle("open");
+
+        }
+
     });
 
 });
+
+
+/* =========================================================
+   CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
+========================================================= */
+
+document.addEventListener("click", function (e) {
+
+    if (window.innerWidth > 850) return;
+
+    if (
+        navbar &&
+        menuToggle &&
+        !navbar.contains(e.target) &&
+        !menuToggle.contains(e.target)
+    ) {
+
+        navbar.classList.remove("active");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (icon) {
+
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+
+        }
+
+    }
+
+});
+
+
+/* =========================================================
+   CLOSE MOBILE MENU AFTER CLICKING NORMAL LINK
+========================================================= */
+
+const navLinks = document.querySelectorAll(
+    ".nav-menu > li:not(.dropdown) > a"
+);
+
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        if (window.innerWidth <= 850) {
+
+            navbar.classList.remove("active");
+
+            const icon = menuToggle.querySelector("i");
+
+            if (icon) {
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            }
+
+        }
+
+    });
+
+});
+
+
+/* =========================================================
+   CHARACTER COUNT
+========================================================= */
+
+const textarea = document.getElementById("projectDetails");
+const charCount = document.getElementById("charCount");
+
+if (textarea && charCount) {
+
+    textarea.addEventListener("input", function () {
+
+        charCount.textContent = textarea.value.length;
+
+    });
+
+}
+
+
+/* =========================================================
+   CONTACT FORM
+========================================================= */
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        alert("Your message has been sent successfully!");
+
+        contactForm.reset();
+
+        if (charCount) {
+            charCount.textContent = "0";
+        }
+
+    });
+
+}
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+const upBtn = document.getElementById("upBtn");
+
+if (upBtn) {
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 400) {
+
+            upBtn.classList.remove("hide");
+
+        } else {
+
+            upBtn.classList.add("hide");
+
+        }
+
+    });
+
+
+    upBtn.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
+
+
+/* =========================================================
+   UPDATE THEME ICON ON LOAD
+========================================================= */
+
+updateThemeIcon();

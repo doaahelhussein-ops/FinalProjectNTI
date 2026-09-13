@@ -1,5 +1,5 @@
 // ========================================
-// DARK / LIGHT MODE
+// DARK / LIGHT MODEممم
 // ========================================
 
 const themeToggle =
@@ -1058,3 +1058,23 @@ const contactObserver =
 contactObserver.observe(contactSection);
 
 
+
+
+
+const newsletterEmail = document.getElementById("newsletter-email");
+const newsletterBtn = document.getElementById("newsletter-btn");
+
+newsletterBtn.addEventListener("click", function () {
+
+    if (newsletterEmail.value.trim() === "") {
+        newsletterEmail.focus();
+        return;
+    }
+
+    if (!newsletterEmail.checkValidity()) {
+        newsletterEmail.reportValidity();
+        return;
+    }
+
+    alert("Your email is: " + newsletterEmail.value);
+});

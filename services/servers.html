@@ -1,141 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>IT Agency - Server</title>
+    <title>IT Agency - Services</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
 
 <body>
 
-    <!-- =====================================================
-         NAVBAR
-    ====================================================== -->
+    <!-- ================= NAVBAR ================= -->
+    <header class="nav" id="header">
 
-    <header class="nav">
+        <div class="container">
 
-        <a href="index.html" class="nav-logo">
-            <img src="photos/img2.png" alt="ITAgency">
-        </a>
-
-        <nav>
-            <ul>
-
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="../About/about.html">About Us</a>
-                </li>
-
-                <li>
-                    <a href="../services/servers.html">Services</a>
-                </li>
-
-                <!-- BLOG -->
-
-                <li class="has-dropdown">
-
-                    <a href="../Blog/Blog Column 1/BlogColumn1.html">
-                        Blog
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-
-                        <li>
-                            <a href="../Blog/Blog Column 1/BlogColumn1.html">
-                                Blog Column 1
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="../Blog/Blog Column 2/BlogColumn2.html">
-                                Blog Column 2
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="../Blog/Blog Column 3/BlogColumn3.html">
-                                Blog Column 3
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="../Blog/Blog Detail Page/BlogDetilPage.html">
-                                Blog Detail Page
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </li>
-
-
-                <!-- PAGE -->
-
-                <li class="has-dropdown">
-
-                    <a href="../Pages/padge.html">
-                        Page
-                        <i class="fa-solid fa-angle-down"></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-
-                        <li>
-                            <a href="../Pages/padge.html">
-                                Terms & Conditions
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </li>
-
-
-                <li>
-                    <a href="../contact/contact.html">
-                        Contact Us
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-
-
-        <div class="nav-actions">
-
-            <a href="contact.html" class="quote-btn">
-                Get Quotes
+              <a href="../index.html" class="logo">
+                <img src="../services/photos/img2.png" alt="ITAgency">
             </a>
 
-            <button class="theme-btn" id="themebtn" type="button">
+            <nav class="navbar">
+                <ul class="nav-menu">
 
-                <i class="fa-regular fa-sun"></i>
+                     <li>
+                        <a href="../index.html">Home</a>
+                    </li>
 
-            </button>
+                    <li>
+                        <a href="../About/about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="../services/servers.html">Services</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="../Blog/Blog Column 1/BlogColumn1.html">
+                            Blog
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Blog/Blog Column 1/BlogColumn1.html">
+                                    Blog column 1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../Blog/Blog Column 2/BlogColumn2.html">
+                                    Blog column 2
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../Blog/Blog Column 3/BlogColumn3.html">
+                                    Blog column 3
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Blog detail page
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="../Pages/padge.html">
+                            Pages
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Pages/padge.html">
+                                    Terms & conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                      <li>
+                        <a href="../contact/contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="actions">
+
+                <button class="quote-btn">
+                    Get Quotes
+                </button>
+
+                <button class="theme-btn" id="theme-toggle">
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+
+                <button class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
 
         </div>
 
     </header>
 
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
 
-    <section class="header">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
 
         <div class="hero-stars">
-
             <span></span>
             <span></span>
             <span></span>
@@ -148,50 +136,27 @@
             <span></span>
             <span></span>
             <span></span>
-
         </div>
-
 
         <div class="hero-shape shape-one"></div>
         <div class="hero-shape shape-two"></div>
         <div class="hero-shape shape-three"></div>
 
+        <img src="photos/img1.png" alt="IT Agency" class="hero-hand">
 
-        <!-- ثابتة -->
-
-        <div class="hand">
-
-            <img src="photos/img1.png" alt="Technology hand">
-
-        </div>
-
-
-        <div class="content">
+        <div class="hero-content">
 
             <div class="breadcrumb">
-
-                <a href="index.html">
-                    Home
-                </a>
-
-                <i class="fa-solid fa-angle-right"></i>
-
-                <span>
-                    Server
-                </span>
-
+                <a href="../index.html">Home</a>
+                <span>></span>
+                <span>Services</span>
             </div>
 
-
-            <h1>
-                Server
-            </h1>
-
+            <h1>Services</h1>
 
             <p>
-                Powerful server solutions designed to keep your
-                business connected, secure, reliable and ready
-                for the future.
+                Powerful server solutions designed to keep your business
+                connected, secure, reliable and ready for the future.
             </p>
 
         </div>
@@ -199,106 +164,104 @@
     </section>
 
 
-    <!-- =====================================================
-         EXPERTISE
-    ====================================================== -->
-
-    <section class="expertise-section">
+    <!-- ================= EXPERTISE ================= -->
+    <section class="expertise" id="expertise">
 
         <div class="expertise-container">
 
-            <div class="expertise-left reveal-left">
+            <div class="expertise-content">
 
-                <span class="section-label">
-                    OUR EXPERTISE
-                </span>
+                <span class="section-label">OUR EXPERTISE</span>
 
                 <h2>
                     Technology that
-                    <span>
-                        transforms your business
-                    </span>
+                    <span>transforms your business</span>
                 </h2>
 
                 <p>
-                    We combine innovation, creativity and technology
-                    to build digital solutions that help businesses
-                    grow and succeed.
+                    We create powerful digital solutions that help businesses
+                    grow, improve performance, and stay ready for the future.
+                    Our services combine modern technology, creative thinking,
+                    and reliable solutions.
                 </p>
 
-                <button class="explore-btn" type="button" onclick="scrollToExpertise()">
-
-                    Explore Our Services →
-
+                <button class="explore-btn" onclick="scrollToExpertise()">
+                    Explore Our Expertise
+                    <i class="fa-solid fa-arrow-down"></i>
                 </button>
 
             </div>
 
 
-            <div class="expertise-right" id="expertise-cards">
+            <div class="service-cards">
 
-                <div class="expertise-card reveal-right">
+                <div class="service-card reveal">
 
-                    <div class="number">
-                        01
+                    <span class="card-number">01</span>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-robot"></i>
                     </div>
 
-                    <div>
+                    <h3>AI & Automation</h3>
 
-                        <h3>
-                            AI & Automation
-                        </h3>
+                    <p>
+                        Smart AI-powered solutions and automation tools
+                        designed to improve productivity and simplify
+                        business processes.
+                    </p>
 
-                        <p>
-                            Intelligent solutions that automate
-                            processes and improve business decisions.
-                        </p>
-
-                    </div>
+                    <a href="../contact/contact.html">
+                        Learn More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
                 </div>
 
 
-                <div class="expertise-card reveal-right">
+                <div class="service-card reveal">
 
-                    <div class="number">
-                        02
+                    <span class="card-number">02</span>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-layer-group"></i>
                     </div>
 
-                    <div>
+                    <h3>Digital Products</h3>
 
-                        <h3>
-                            Digital Products
-                        </h3>
+                    <p>
+                        Modern digital products and web experiences built
+                        around your business goals and your customers'
+                        needs.
+                    </p>
 
-                        <p>
-                            Modern web and mobile applications
-                            designed around your business needs.
-                        </p>
-
-                    </div>
+                    <a href="../contact/contact.html">
+                        Learn More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
                 </div>
 
 
-                <div class="expertise-card reveal-right">
+                <div class="service-card reveal">
 
-                    <div class="number">
-                        03
+                    <span class="card-number">03</span>
+
+                    <div class="card-icon">
+                        <i class="fa-solid fa-cloud"></i>
                     </div>
 
-                    <div>
+                    <h3>Cloud & Data</h3>
 
-                        <h3>
-                            Cloud & Data
-                        </h3>
+                    <p>
+                        Secure and scalable cloud and data solutions that
+                        help your business manage information efficiently.
+                    </p>
 
-                        <p>
-                            Scalable cloud infrastructure and
-                            powerful data solutions.
-                        </p>
-
-                    </div>
+                    <a href="../contact/contact.html">
+                        Learn More
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
 
                 </div>
 
@@ -308,217 +271,262 @@
 
     </section>
 
+    
+    <!-- ================= CTA ================= -->
+    <section class="cta">
 
-    <!-- =====================================================
-         CTA
-    ====================================================== -->
+        <div class="cta-container">
 
-    <section class="cta-section">
+            <img
+                src="photos/img1.png"
+                alt="IT Agency"
+                class="cta-hand"
+            >
 
-        <div class="cta-image">
+            <div class="cta-content">
 
-            <img src="photos/img1.png" alt="Technology hand">
+                <span class="section-label">LET'S WORK TOGETHER</span>
 
-        </div>
+                <h2>Let's Build the Future Together</h2>
 
+                <p>
+                    Have an idea or a project in mind?
+                    Let's turn your vision into a powerful digital experience.
+                </p>
 
-        <div class="cta-content reveal">
+                <a href="../contact/contact.html" class="cta-btn">
+                    Get Started
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
 
-            <h2>
-                Let's Build the Future Together
-            </h2>
-
-            <p>
-                Your vision deserves to become reality.
-                Connect with our innovative team and
-                let's create extraordinary digital experiences
-                that push the boundaries of technology.
-            </p>
-
-            <a href="contact.html" class="cta-btn">
-
-                Get Started Today
-
-            </a>
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- =====================================================
-         FAQ
-    ====================================================== -->
-
-    <section class="faq-section">
-
-        <div class="faq-header reveal">
-
-            <h2>
-                Frequently Asked Questions
-            </h2>
-
-            <p>
-                Find answers to the most common questions
-                about our services.
-            </p>
-
-        </div>
-
+    <!-- ================= FAQ ================= -->
+    <section class="faq">
 
         <div class="faq-container">
 
-            <div class="faq-item reveal">
+            <div class="faq-heading">
 
-                <button class="faq-question" type="button">
+                <span class="section-label">FAQ</span>
 
-                    <span>
-                        What services do you offer?
-                    </span>
+                <h2>
+                    Frequently Asked
+                    <span>Questions</span>
+                </h2>
 
-                    <span class="faq-arrow">
+                <p>
+                    Find answers to some of the most common questions
+                    about our services.
+                </p>
+
+            </div>
+
+
+            <div class="faq-list">
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>What services does IT Agency provide?</span>
                         <i class="fa-solid fa-chevron-down"></i>
-                    </span>
+                    </button>
 
-                </button>
+                    <div class="faq-answer">
+                        <p>
+                            We provide digital solutions including AI and
+                            automation, digital products, cloud and data
+                            solutions, web development, UI/UX design,
+                            cybersecurity, and digital marketing.
+                        </p>
+                    </div>
 
-                <div class="faq-answer">
+                </div>
 
-                    <p>
-                        We offer web development, mobile applications,
-                        cloud solutions, cybersecurity and digital
-                        transformation services.
-                    </p>
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>Can you build a website for my business?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. We can create modern, responsive, and
+                            user-friendly websites designed around your
+                            business requirements.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>Do you provide customized solutions?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Every project can be customized according
+                            to the specific goals, requirements, and needs
+                            of the business.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>Are your websites responsive?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Yes. Our websites are designed to work smoothly
+                            across desktops, tablets, and mobile devices.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>How can I start a project with you?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            You can contact us through the Contact Us page
+                            and share your project idea and requirements.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        <span>How long does a project usually take?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="faq-answer">
+                        <p>
+                            Project duration depends on the scope and
+                            complexity of the work. We discuss the timeline
+                            with you before starting.
+                        </p>
+                    </div>
 
                 </div>
 
             </div>
 
+        </div>
 
-            <div class="faq-item reveal">
+    </section>
 
-                <button class="faq-question" type="button">
 
-                    <span>
-                        How long does a typical project take?
-                    </span>
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials">
 
-                    <span class="faq-arrow">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
+        <div class="testimonials-container">
 
-                </button>
+            <div class="testimonials-heading">
 
-                <div class="faq-answer">
+                <span class="section-label">TESTIMONIALS</span>
 
-                    <p>
-                        Project duration depends on the scope and
-                        complexity. After understanding your
-                        requirements, we provide a clear timeline.
-                    </p>
+                <h2>What Our Clients Say</h2>
 
-                </div>
+                <p>
+                    Real experiences from people who worked with us.
+                </p>
 
             </div>
 
 
-            <div class="faq-item reveal">
+            <div class="testimonial-grid">
 
-                <button class="faq-question" type="button">
+                <div class="testimonial-card">
 
-                    <span>
-                        Do you provide ongoing support?
-                    </span>
+                    <div class="testimonial-top">
+                        <img src="photos/img3.png" alt="Lisa Martinez">
 
-                    <span class="faq-arrow">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
+                        <div>
+                            <h3>Lisa Martinez</h3>
+                            <span>UX Designer</span>
+                        </div>
+                    </div>
 
-                </button>
-
-                <div class="faq-answer">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
 
                     <p>
-                        Yes, we provide ongoing support and maintenance
-                        to keep your systems secure and up to date.
+                        "The team was professional, creative, and very
+                        responsive throughout the entire project."
                     </p>
 
                 </div>
 
-            </div>
 
+                <div class="testimonial-card">
 
-            <div class="faq-item reveal">
+                    <div class="testimonial-top">
+                        <img src="photos/img4.png" alt="David Rodriguez">
 
-                <button class="faq-question" type="button">
+                        <div>
+                            <h3>David Rodriguez</h3>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
 
-                    <span>
-                        What is your pricing model?
-                    </span>
-
-                    <span class="faq-arrow">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
 
                     <p>
-                        Pricing depends on your project requirements,
-                        complexity and the services needed.
+                        "A great experience from start to finish.
+                        The final result was exactly what we needed."
                     </p>
 
                 </div>
 
-            </div>
 
+                <div class="testimonial-card">
 
-            <div class="faq-item reveal">
+                    <div class="testimonial-top">
+                        <img src="photos/img5.png" alt="Amanda Thompson">
 
-                <button class="faq-question" type="button">
+                        <div>
+                            <h3>Amanda Thompson</h3>
+                            <span>Operations Manager</span>
+                        </div>
+                    </div>
 
-                    <span>
-                        Can you work with our existing team?
-                    </span>
-
-                    <span class="faq-arrow">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
 
                     <p>
-                        Absolutely. We can work alongside your existing
-                        developers, designers and business teams.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item reveal">
-
-                <button class="faq-question" type="button">
-
-                    <span>
-                        Do you ensure data security?
-                    </span>
-
-                    <span class="faq-arrow">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    <p>
-                        Yes. We take security and confidentiality
-                        seriously and can sign NDAs when required.
+                        "They delivered a clean and professional solution
+                        that made a real difference to our business."
                     </p>
 
                 </div>
@@ -530,460 +538,159 @@
     </section>
 
 
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
 
-        <!-- نفس صورة الهيدر -->
-
-        <img src="photos/img1.png" alt="" class="footer-hand">
-
-
-        <!-- =================================================
-             TESTIMONIALS
-        ================================================== -->
-
-        <div class="footer-testimonials">
-
-            <div class="footer-testimonials-header">
-
-                <h2>
-                    Testimonials
-                </h2>
-
-                <p>
-                    Trusted feedback from companies and partners
-                    who believe in our quality.
-                </p>
-
-            </div>
-
-
-            <div class="footer-testimonials-container">
-
-                <article class="footer-testimonial-card">
-
-                    <div class="testimonial-content">
-
-                        <div class="quote-icon">
-                            “
-                        </div>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </p>
-
-                    </div>
-
-
-                    <div class="footer-testimonial-person">
-
-                        <img src="photos/img3.png" alt="Lisa Martinez">
-
-                        <div>
-
-                            <h4>
-                                Lisa Martinez
-                            </h4>
-
-                            <span>
-                                UX Designer
-                            </span>
-
-                            <div class="stars">
-                                ★★★★★
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article class="footer-testimonial-card">
-
-                    <div class="testimonial-content">
-
-                        <div class="quote-icon">
-                            “
-                        </div>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </p>
-
-                    </div>
-
-
-                    <div class="footer-testimonial-person">
-
-                        <img src="photos/img4.png" alt="David Rodriguez">
-
-                        <div>
-
-                            <h4>
-                                David Rodriguez
-                            </h4>
-
-                            <span>
-                                Software Engineer
-                            </span>
-
-                            <div class="stars">
-                                ★★★★★
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <article class="footer-testimonial-card">
-
-                    <div class="testimonial-content">
-
-                        <div class="quote-icon">
-                            “
-                        </div>
-
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit.
-                        </p>
-
-                    </div>
-
-
-                    <div class="footer-testimonial-person">
-
-                        <img src="photos/img5.png" alt="Amanda Thompson">
-
-                        <div>
-
-                            <h4>
-                                Amanda Thompson
-                            </h4>
-
-                            <span>
-                                Operations Manager
-                            </span>
-
-                            <div class="stars">
-                                ★★★★★
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-            </div>
-
+        <div class="footer-hand">
+            <img src="photos/img1.png" alt="IT Agency">
         </div>
-
-
-        <!-- =================================================
-             FOOTER COLUMNS
-        ================================================== -->
 
         <div class="footer-container">
 
+            <div class="footer-column company">
 
-            <!-- COMPANY -->
-
-            <div class="footer-column company reveal">
-
-                <a href="index.html">
-
-                    <img src="photos/img2.png" alt="ITAgency" class="footer-logo-img">
-
-                </a>
+                <img
+                    src="photos/img2.png"
+                    alt="IT Agency Logo"
+                    class="footer-logo"
+                >
 
                 <p>
-                    Empowering businesses with smart,
-                    innovative IT solutions.
+                    We build innovative digital solutions that help
+                    businesses grow, connect, and succeed.
                 </p>
 
-                <h4>
-                    Follow Us
-                </h4>
+                <div class="social-icons">
 
-                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
 
-                    <a href="#">X</a>
-                    <a href="#">f</a>
-                    <a href="#">in</a>
-                    <a href="#">◎</a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
 
-                </div>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
 
-            </div>
-
-
-            <!-- NAVIGATION -->
-
-            <div class="footer-column reveal">
-
-                <h3>
-                    Navigation
-                </h3>
-
-                <div class="footer-line"></div>
-
-                 <ul>
-
-                    <li>
-                        <a href="../index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../About/about.html">
-                            About Us
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../services/servers.html">
-                            Services
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../Blog/Blog Column 1/BlogColumn1.html">
-                            Blog
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../contact/contact.html">
-                            ContactUs
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="../Blog/Blog Detail Page/BlogDetilPage.html">
-                            Blog Detail Page
-                        </a>
-                    </li>
-
-
-                     <li>
-                        <a href="../Blog/Blog Column 1/BlogColumn1.html">
-                            Blog
-                        </a>
-                    </li>
-
-                    
-
-                </ul>
-
-            </div>
-
-
-            <!-- SERVICES -->
-
-            <div class="footer-column reveal">
-
-                <h3>
-                    Our Services
-                </h3>
-
-                <div class="footer-line"></div>
-
-                <ul>
-
-                    <li>
-                        <a href="servers.html">
-                            Web Development
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="servers.html">
-                            Mobile App Development
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="servers.html">
-                            Cloud Solutions
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="servers.html">
-                            Digital Marketing
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="servers.html">
-                            UI/UX Design
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="servers.html">
-                            Data Analytics
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="servers.html">
-                            Cybersecurity
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- CONTACT -->
-
-            <div class="footer-column reveal">
-
-                <h3>
-                    Contact Info
-                </h3>
-
-                <div class="footer-line"></div>
-
-                <div class="contact-item">
-
-                    <span>
-                        <i class="fa-solid fa-location-dot"></i>
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            ADDRESS
-                        </strong>
-
-                        <p>
-                            789 Innovation Avenue,<br>
-                            Future Town, FT 67890
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span>
-                        <i class="fa-solid fa-phone"></i>
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            PHONE
-                        </strong>
-
-                        <p>
-                            +1 (800) 987-6543
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <span>
-                        <i class="fa-solid fa-envelope"></i>
-                    </span>
-
-                    <div>
-
-                        <strong>
-                            EMAIL
-                        </strong>
-
-                        <p>
-                            hello@itagency.com
-                        </p>
-
-                    </div>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
 
                 </div>
 
             </div>
 
 
-            <!-- NEWSLETTER -->
+            <div class="footer-column">
 
-            <div class="footer-column newsletter reveal">
+                <h3>Navigation</h3>
 
-                <h3>
-                    Newsletter
-                </h3>
+                <a href="../index.html">Home</a>
+                <a href="../About/about.html">About Us</a>
+                <a href="servers.html">Services</a>
+                <a href="../Blog/Blog Column 1/blog.html">Blog</a>
+                <a href="../contact/contact.html">Contact Us</a>
+                <a href="../Blog/Blog Detail/blog.html">Blog Detail Page</a>
 
-                <div class="footer-line"></div>
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Our Services</h3>
+
+                <a href="#">Web Development</a>
+                <a href="#">Mobile App Development</a>
+                <a href="#">Cloud Solutions</a>
+                <a href="#">Digital Marketing</a>
+                <a href="#">UI/UX Design</a>
+                <a href="#">Data Analytics</a>
+                <a href="#">Cybersecurity</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact Info</h3>
 
                 <p>
-                    Subscribe to our newsletter for the latest
-                    tech insights and updates.
+                    <i class="fa-solid fa-location-dot"></i>
+                    Mansoura, Egypt
                 </p>
 
-                <form class="newsletter-form" id="newsletterForm">
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +20 000 000 0000
+                </p>
 
-                    <input type="email" id="newsletterEmail" placeholder="Enter your email address">
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@itagency.com
+                </p>
+
+            </div>
+
+
+            <div class="footer-column newsletter">
+
+                <h3>Newsletter</h3>
+
+                <p>
+                    Subscribe to our newsletter to receive
+                    our latest updates.
+                </p>
+
+                <form id="newsletter-form">
+
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        placeholder="Your Email"
+                        required
+                    >
 
                     <button type="submit">
-
                         <i class="fa-solid fa-arrow-right"></i>
-
                     </button>
 
                 </form>
 
+                <label class="privacy">
 
-                <label class="privacy-check">
-
-                    <input type="checkbox">
+                    <input type="checkbox" required>
 
                     <span>
-                        I agree to the Privacy Policy
+                        I agree to the privacy policy.
                     </span>
 
                 </label>
 
-
-                <p class="copyright">
-                    ITAgency © 2025
-                </p>
-
             </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                ITAgency © 2025. All Rights Reserved.
+            </p>
 
         </div>
 
     </footer>
 
 
-    <button class="back-to-top" id="backToTop" type="button">
-
+    <!-- ================= BACK TO TOP ================= -->
+    <button id="back-to-top" aria-label="Back to top">
         <i class="fa-solid fa-arrow-up"></i>
-
     </button>
 
 
     <script src="script.js"></script>
 
 </body>
-
 </html>

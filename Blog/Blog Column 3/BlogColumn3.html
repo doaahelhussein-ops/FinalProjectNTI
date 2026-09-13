@@ -15,60 +15,106 @@
 
 
 
-    <header class="header header-transparent">
-    <div class="container d-flex-between">
-      <!-- Logo -->
-      <div class="logo position-relative">
-        <img class="image" src="./final project/logo-transparent-01.png" alt="Logo">
-        <a class="overlay-link" href="#"></a>
-      </div>
+    <header class="header" id="header">
+        <div class="container">
 
-      <!-- Navigation -->
-      <nav class="navbar" id="navbar">
-        <ul class="nav-menu">
-          <li class="dropdown">
-            <a href="../../index.html" class="nav-link">Home</a>
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="./final project/logo-transparent-01.png" alt="ITAgency">
+                </a>
+            </div>
 
-          </li>
-          <li><a href="../../About/about.html" class="nav-link">About Us</a></li>
-          <li><a href="../../services/servers.html" class="nav-link">Services</a></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-dropdown="blog-dropdown">Blog</a>
-            <ul class="dropdown-menu" id="blog-dropdown">
-              <li><a href="../Blog Column 1/BlogColumn1.html" class="dropdown-item">Blog Column 1</a></li>
-              <li><a href="../Blog Column 2/BlogColumn2.html" class="dropdown-item">Blog Column 2</a></li>
-              <li><a href="./BlogColumn3.html" class="dropdown-item">Blog Column 3</a></li>
-              <li><a href="../Blog Detail Page/BlogDetilPage.html" class="dropdown-item">Blog Detail Page</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="../../Pages/padge.html" class="dropdown-toggle" data-dropdown="pages-dropdown">Pages</a>
-            <ul class="dropdown-menu" id="pages-dropdown">
-              <li><a href="../../Pages/padge.html" class="dropdown-item">Terms & Conditions</a></li>
-            </ul>
-          </li>
-          <li><a href="../../contact/contact.html" class="nav-link">Contact Us</a></li>
-        </ul>
-      </nav>
+            <nav class="navbar">
+                <ul class="nav-menu">
 
-      <!-- Get Quotes Button -->
-      <div class="actions d-flex-center">
-        <a pages="" contact-us.html="" class="btn btn-get-quotes">Get Quotes</a>
-        <div class="theme-switcher">
-          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
-            <i class="fa-regular fa-moon"></i>
-          </button>
+                    <li>
+                        <a href="../../index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="../../about/about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="../../services/servers.html">Services</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            Blog
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../Blog Column 1/BlogColumn1.html">
+                                    Blog Column 1
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../Blog Column 2/BlogColumn2.html">
+                                    Blog Column 2
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="../Blog Column 3/BlogColumn3.html">
+                                    Blog Column 3
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    Blog Details Pages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="../../Pages/padge.html" class="dropdown-toggle">
+                            Pages
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../../pages/team.html">
+                                    Terms&Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="../../contact/contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="actions">
+
+                <a href="../../contact/contact.html" class="btn-get-quotes">
+                    Get Quotes
+                </a>
+
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+                    ☰
+                </button>
+
+            </div>
+
         </div>
-      </div>
+    </header>
 
-      <!-- Mobile Menu Toggle -->
-      <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-    </div>
-  </header>
 
 
 
@@ -107,7 +153,8 @@
         </div>
 
         <div class="page-header-content">
-            <div class="container text-center">
+            <div class="page-header-inner">
+
                 <div class="breadcrumb aos-init aos-animate" data-aos="fade-down">
                     <a href="#" class="breadcrumb-link">Home</a>
                     <span class="breadcrumb-separator">
@@ -116,13 +163,16 @@
                     <span class="breadcrumb-current">Blog Column 3</span>
                 </div>
 
-                <h1 class="page-title aos-init aos-animate" data-aos="fade-up">Blog Column 3</h1>
+                <h1 class="page-title aos-init aos-animate" data-aos="fade-up">
+                    Blog Column 3
+                </h1>
 
                 <p class="page-description aos-init aos-animate" data-aos="fade-up">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto pariatur dolorem porro! Error
                     ea qui vero minima ducimus minus, quidem explicabo amet nulla possimus perferendis, eligendi atque
                     ex? Odio, maxime.
                 </p>
+
             </div>
         </div>
 
@@ -445,63 +495,10 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer class="footer pb-5">
         <img src="./final project/hand-ia-bgremove.png" alt="Hand Background" class="footer-hand-bg">
         <div class="footer-main">
-            <div class="container">
+            <div class="footer-container">
                 <div class="footer-content">
                     <!-- Company Info -->
                     <div class="footer-section footer-about aos-init aos-animate" data-aos="fade-up"
@@ -649,14 +646,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

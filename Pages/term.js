@@ -1,20 +1,159 @@
+
 /* =========================================================
-   NAVBAR SCROLL
+   NAVBAR
 ========================================================= */
 
-const navbar = document.querySelector(".nav");
+const header = document.getElementById("header");
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector(".navbar");
 
-if (navbar) {
 
-    window.addEventListener("scroll", function () {
+/* Scroll Navbar */
 
-        if (window.scrollY > 50) {
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+   
 
-            navbar.classList.add("scrolled");
+/* Mobile Menu */
+
+if (menuToggle && navbar) {
+
+    menuToggle.addEventListener("click", () => {
+
+        navbar.classList.toggle("active");
+
+        const icon = menuToggle.querySelector("i");
+
+        if (navbar.classList.contains("active")) {
+            icon.classList.remove("fa-bars");
+            icon.classList.add("fa-xmark");
+        } else {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+
+    });
+
+}
+
+
+/* =========================================================
+   DROPDOWN
+========================================================= */
+
+const dropdowns = document.querySelectorAll(".dropdown");
+
+dropdowns.forEach((dropdown) => {
+
+    const link = dropdown.querySelector(":scope > a");
+
+    if (!link) return;
+
+    link.addEventListener("click", (event) => {
+
+        if (window.innerWidth <= 1100) {
+
+            event.preventDefault();
+
+            dropdowns.forEach((item) => {
+
+                if (item !== dropdown) {
+                    item.classList.remove("open");
+                }
+
+            });
+
+            dropdown.classList.toggle("open");
+
+        }
+
+    });
+
+});
+
+
+/* Close mobile menu after clicking normal links */
+
+const navLinks = document.querySelectorAll(
+    ".nav-menu > li:not(.dropdown) > a"
+);
+
+navLinks.forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+        if (window.innerWidth <= 1100) {
+
+            navbar.classList.remove("active");
+
+            const icon = menuToggle?.querySelector("i");
+
+            if (icon) {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+
+        }
+
+    });
+
+});
+
+
+/* =========================================================
+   CLOSE MENU WHEN RESIZING
+========================================================= */
+
+window.addEventListener("resize", () => {
+
+    if (window.innerWidth > 1100) {
+
+        navbar.classList.remove("active");
+
+        dropdowns.forEach((dropdown) => {
+            dropdown.classList.remove("open");
+        });
+
+        const icon = menuToggle?.querySelector("i");
+
+        if (icon) {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+
+    }
+
+});
+
+
+/* =========================================================
+   DARK / LIGHT MODE
+========================================================= */
+
+const themeToggle = document.getElementById("theme-toggle");
+
+if (themeToggle) {
+
+    themeToggle.addEventListener("click", () => {
+
+        document.body.classList.toggle("dark");
+
+        const icon = themeToggle.querySelector("i");
+
+        if (document.body.classList.contains("dark")) {
+
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-moon");
 
         } else {
 
-            navbar.classList.remove("scrolled");
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
 
         }
 
@@ -23,13 +162,14 @@ if (navbar) {
 }
 
 
-
 /* =========================================================
    SCROLL REVEAL
 ========================================================= */
 
 const revealElements =
-    document.querySelectorAll(".reveal");
+    document.querySelectorAll(
+        ".reveal"
+    );
 
 
 function revealOnScroll() {
@@ -38,23 +178,29 @@ function revealOnScroll() {
         window.innerHeight;
 
 
-    revealElements.forEach(function (element) {
+    revealElements.forEach(
+        function (element) {
 
-        const elementTop =
-            element.getBoundingClientRect().top;
-
-
-        const revealPoint = 120;
+            const elementTop =
+                element.getBoundingClientRect().top;
 
 
-        if (elementTop <
-            windowHeight - revealPoint) {
+            const revealPoint = 120;
 
-            element.classList.add("active");
+
+            if (
+                elementTop <
+                windowHeight - revealPoint
+            ) {
+
+                element.classList.add(
+                    "active"
+                );
+
+            }
 
         }
-
-    });
+    );
 
 }
 
@@ -71,13 +217,14 @@ window.addEventListener(
 );
 
 
-
 /* =========================================================
    BACK TO TOP
 ========================================================= */
 
 const backToTop =
-    document.getElementById("backToTop");
+    document.getElementById(
+        "backToTop"
+    );
 
 
 if (backToTop) {
@@ -88,11 +235,15 @@ if (backToTop) {
 
             if (window.scrollY > 500) {
 
-                backToTop.classList.add("show");
+                backToTop.classList.add(
+                    "show"
+                );
 
             } else {
 
-                backToTop.classList.remove("show");
+                backToTop.classList.remove(
+                    "show"
+                );
 
             }
 
@@ -116,70 +267,6 @@ if (backToTop) {
     );
 
 }
-
-
-
-/* =========================================================
-   DARK MODE
-========================================================= */
-
-const themeToggle =
-    document.getElementById("themeToggle");
-
-
-if (themeToggle) {
-
-    const savedTheme =
-        localStorage.getItem("theme");
-
-
-    if (savedTheme === "dark") {
-
-        document.body.classList.add("dark");
-
-        themeToggle.textContent = "☀";
-
-    } else {
-
-        themeToggle.textContent = "☾";
-
-    }
-
-
-    themeToggle.addEventListener(
-        "click",
-        function () {
-
-            document.body.classList.toggle("dark");
-
-
-            if (
-                document.body.classList.contains("dark")
-            ) {
-
-                themeToggle.textContent = "☀";
-
-                localStorage.setItem(
-                    "theme",
-                    "dark"
-                );
-
-            } else {
-
-                themeToggle.textContent = "☾";
-
-                localStorage.setItem(
-                    "theme",
-                    "light"
-                );
-
-            }
-
-        }
-    );
-
-}
-
 
 
 /* =========================================================
@@ -232,3 +319,55 @@ if (newsletterForm) {
     );
 
 }
+
+
+/* =========================================================
+   RESIZE
+========================================================= */
+
+window.addEventListener(
+    "resize",
+    function () {
+
+        if (window.innerWidth > 1100) {
+
+            if (navbarMenu) {
+
+                navbarMenu.classList.remove(
+                    "mobile-open"
+                );
+
+            }
+
+
+            dropdowns.forEach(
+                function (dropdown) {
+
+                    dropdown.classList.remove(
+                        "open"
+                    );
+
+                }
+            );
+
+
+            if (menuToggle) {
+
+                const icon =
+                    menuToggle.querySelector("i");
+
+
+                icon.classList.remove(
+                    "fa-xmark"
+                );
+
+                icon.classList.add(
+                    "fa-bars"
+                );
+
+            }
+
+        }
+
+    }
+);
